@@ -13,9 +13,9 @@ pipeline {
         sh 'mvn test'
       }
     }
-    stage('Deploy') {
+    stage('package') {
       steps {
-        sh 'mvn deploy'
+        sh 'mvn package'
       }
     }
   }
